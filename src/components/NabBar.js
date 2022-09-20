@@ -3,11 +3,11 @@ const NabBar = () => {
     return (
         <div>
 
-<nav  className="bg-white shadow">
+<nav  className=" bg-gray-900 shadow-black-xl border-4 border-double border-gray-600 ">
   <div  className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
     <div  className="flex justify-between items-center">
       <div>
-        <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700 hover:uppercase"   > GasparInc</a>
+        <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-white hover:uppercase"   > GasparInc</a>
       </div>
 
       
@@ -23,14 +23,14 @@ const NabBar = () => {
     
     <div  className="md:flex items-center">
       <div  className="flex flex-col md:flex-row md:mx-6">
-        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0"  >Home</a>
-        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0"  >Comprar</a>
-        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0"  >Contacto</a>
-        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0"  >Sobre mi</a>
+        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-white  md:mx-4 md:my-0"  >Home</a>
+        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-white md:mx-4 md:my-0"  >Comprar</a>
+        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-white md:mx-4 md:my-0"  >Contacto</a>
+        <a  className="my-1 text-sm text-gray-700 font-medium hover:text-white md:mx-4 md:my-0"  >Sobre mi</a>
       </div>
 
       <div  className="flex justify-center md:block">
-        <a  className="relative text-black-700 hover:text-yellow-600"  >
+        <a  className="relative text-black-700 hover:text-yellow-600 "  >
           <svg  className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.70711 15.2929C4.07714 15.9229 4.52331 17 5.41421 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
