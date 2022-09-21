@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 
-const Greeting= ({name}) => {
+const Greeting= (props) => {
+    
 
     return (
+        
         <div>
-            <h1> Hola capo {name}</h1>
+            <h1> Hola {props.name} {props.lastname}</h1>
         </div>
          );
         }

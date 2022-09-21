@@ -1,14 +1,15 @@
 
 import './App.css';
 import NavBar from './/components/NavBar';
-import './/components/Logo.js'
-import  Greeting  from ".//components/Greeting";
+import './components/CartWidget.js'
+import  Greeting  from ".//components/ItemListContainer";
 
 function App() {
   return (
     <div>
    <NavBar/>
-   <Greeting name="inaki"/>
+   <Greeting name="Lionel" lastname="Messi"/>
+   <Greeting name="Lautaro" lastname="Martinez"/>
     </div>
    
   );

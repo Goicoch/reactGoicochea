@@ -1,5 +1,5 @@
 import './NavBar.css';
-import Logo from './Logo.js';
+import CartWidget from './CartWidget.js';
 
 const NavBar = () => {
     return (
@@ -10,7 +10,7 @@ const NavBar = () => {
   <div  className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
     <div  className="flex justify-between items-center">
    <div >
-    <Logo className="items-start"/>
+    <CartWidget name="logo" />
    </div> 
       <div>
      <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-white hover:uppercase"   > GasparInc</a>
