@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = () => {
     return (
         <div>
-            <h1>hola</h1>
+            <img src="/favicon.ico"></img>
         </div>
          );
         }
