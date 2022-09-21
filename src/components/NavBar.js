@@ -1,15 +1,19 @@
 import './NavBar.css';
 import Logo from './Logo.js';
+
 const NavBar = () => {
     return (
         <div>
 
 <nav  className=" bg-gray-900 shadow-black-xl border-4 border-double border-gray-600 ">
-<Logo/>
+
   <div  className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
     <div  className="flex justify-between items-center">
+   <div >
+    <Logo className="items-start"/>
+   </div> 
       <div>
-        <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-white hover:uppercase"   > GasparInc</a>
+     <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-white hover:uppercase"   > GasparInc</a>
       </div>
 
       
