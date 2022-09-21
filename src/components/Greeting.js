@@ -1,8 +1,10 @@
-const Greeting= () => {
+import { useEffect, useState } from 'react';
+
+const Greeting= ({name}) => {
 
     return (
         <div>
-            <h1> Hola capo</h1>
+            <h1> Hola capo {name}</h1>
         </div>
          );
         }
