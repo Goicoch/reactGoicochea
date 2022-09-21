@@ -1,7 +1,8 @@
 
 import './App.css';
 import NavBar from './/components/NavBar';
-
+import './/components/Logo.js'
+import Logo from './/components/Logo.js';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
    <NavBar/>
    
     </div>
+   
   );
 }
 

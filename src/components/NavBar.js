@@ -1,10 +1,11 @@
 import './NavBar.css';
-
+import Logo from './Logo.js';
 const NavBar = () => {
     return (
         <div>
 
 <nav  className=" bg-gray-900 shadow-black-xl border-4 border-double border-gray-600 ">
+<Logo/>
   <div  className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
     <div  className="flex justify-between items-center">
       <div>
