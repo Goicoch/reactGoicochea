@@ -7,16 +7,13 @@ const NavBar = () => {
 
 <nav  className=" bg-gray-900 shadow-black-xl border-4 border-double border-gray-600 ">
 
-  <div  className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
-    <div  className="flex justify-between items-center">
-   <div >
-    <CartWidget name="logo" />
-   </div> 
-      <div>
-     <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-white hover:uppercase"   > GasparInc</a>
+  <div  className="container mx-auto px-0 py-3 md:flex md:justify-between md:items-start">
+  <div className="flex justify-between">
+    <CartWidget / >
+      <a  className="text-gray-800 text-xl font-bold md:text-2xl hover:text-white hover:uppercase px-3 py-2"> GasparInc</a>
       </div>
 
-      
+      <div>
       <div  className="flex md:hidden">
         <button type="button"  className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
           <svg viewBox="0 0 24 24"  className="h-6 w-6 fill-current">
