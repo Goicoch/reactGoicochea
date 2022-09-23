@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
 
-const Greeting= (props) => {
+
+const ItemListContainer = (props) => {
     
-
     return (
         
         <div>
-            <h1> Hola {props.name} {props.lastname}</h1>
+            <h1> Hola Bienvenido  {props.greeting} </h1>
         </div>
          );
         }
+        
 
-export default Greeting
+export default ItemListContainer
