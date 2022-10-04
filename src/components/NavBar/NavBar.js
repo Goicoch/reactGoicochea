@@ -1,9 +1,9 @@
 import './NavBar.css';
-import CartWidget from './CartWidget.js';
+import CartWidget from '../CartWidget/CartWidget.js';
 
 const NavBar = () => {
     return (
-        <div>
+       
 
 <nav  className=" bg-gray-900 shadow-black-xl border-4 border-double border-gray-600 ">
 
@@ -45,7 +45,7 @@ const NavBar = () => {
   </div>
 </nav>
 
-        </div>
+ 
         
     );
 }
