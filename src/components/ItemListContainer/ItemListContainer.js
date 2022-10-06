@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const books = [
     {"id":1, "name":"Harry Potter","imagen":".//imagenes/harry potter.jpg", "price":3200, "autor":"J.K Rowling", "stock":0, "genero":"terror"},
@@ -25,9 +25,13 @@ export const ItemListContainer = ({texto}) => {
             }, 1500);
             
         });
+        if(categoryId){
+        getData.then(res => setData(res.filter(books => books.genero ===categoryId)));
+    }else {
         getData.then(res => setData(res));
+    }
     },
-    [])
+    [categoryId])
 
     return (
         

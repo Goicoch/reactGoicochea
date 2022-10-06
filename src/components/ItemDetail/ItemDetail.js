@@ -1,6 +1,9 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 export const ItemDetail =({data}) => {
+
+    
     return(
         <div>
        
@@ -8,7 +11,7 @@ export const ItemDetail =({data}) => {
             <div   ClassName="container px-4 px-lg-5 my-5">
                 <div   ClassName="row gx-4 gx-lg-5 align-items-center">
                     <div   ClassName="col-md-6">
-                        <img   className="ItemDetailImg" src={data.imagen} alt="..." />
+                        <img  style={{ width:200, }}  className="ItemDetailImg" src={data.imagen} alt="..." />
                     </div>
                     
                     <div   ClassName="col-md-6">
@@ -21,15 +24,21 @@ export const ItemDetail =({data}) => {
                         <p   ClassName="lead">descripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripcion</p>
                         <div  ClassName="d-flex">
                            
-                        <button type="button"  className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+                        <Button type="button"  variant="dark">
           Agregar al Carrito
-        </button>
+        </Button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+    
+   
+        
+          </div>
+     
+    
+    
     )
 }
  
