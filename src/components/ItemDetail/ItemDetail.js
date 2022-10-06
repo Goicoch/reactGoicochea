@@ -1,7 +1,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 
-export const ItemDetail =({data}) => {
+export const ItemDetail =({data = [] }) => {
 
     
     return(

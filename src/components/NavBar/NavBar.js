@@ -29,7 +29,7 @@ const NavBar = () => {
       <NavLink to="/category" className="my-1 text-sm text-gray-700 font-medium hover:text-white md:mx-4 md:my-0"  >Categoria</NavLink>
         <NavLink to="/category/terror" className="my-1 text-sm text-gray-700 font-medium hover:text-white  md:mx-4 md:my-0"  >terror</NavLink>
         <NavLink to="/category/fantasia" className="my-1 text-sm text-gray-700 font-medium hover:text-white md:mx-4 md:my-0"  >fantasia</NavLink>
-        <NavLink to="detail" className="my-1 text-sm text-gray-700 font-medium hover:text-white md:mx-4 md:my-0"  >detalle</NavLink>
+        
         
       </div>
 

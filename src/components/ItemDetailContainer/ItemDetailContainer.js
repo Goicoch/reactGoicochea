@@ -15,7 +15,7 @@ const books = [
 
 export const ItemDetailContainer = () => {
 const [data, setData] = useState({});
-const {detailId} = useParams();
+const { itemId} = useParams();
 
 useEffect(() =>{
     const getData = new Promise(resolve => {
@@ -24,7 +24,7 @@ useEffect(() =>{
         }, 1000);
         
     });
-    getData.then(res => setData(res.find(books => books.id === parseInt(detailId))));
+    getData.then(res => setData(res.find(books => books.id === parseInt(itemId))));
 
 },[])
 
