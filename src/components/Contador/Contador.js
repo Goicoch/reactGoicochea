@@ -1,7 +1,7 @@
-import React,{useState}from "react" ;
+import React, {useEffect, useState}from "react" ;
 
 export const Contador = ({ initial , stock, onAdd }) => {
-   const [count, setCount] = useState(initial);
+   const [count, setCount] = useState(parseInt(initial));
    
    const quitar = () => {
     setCount (count - 1);
@@ -9,6 +9,9 @@ export const Contador = ({ initial , stock, onAdd }) => {
    const sumar = () => {
     setCount (count + 1);
    }
+   useEffect(() => {
+    setCount(parseInt(initial));
+   },[initial])
 
     return (
         <div>
