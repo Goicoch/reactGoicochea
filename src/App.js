@@ -7,12 +7,15 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contador from "./components/Contador/Contador";
 
 function App() {
   return (
     <div>
+     
     <BrowserRouter>
     <NavBar/>
+   
     <Routes>
       <Route path="/" element={ <ItemListContainer/>} />
       <Route path="/category/" element={ <ItemListContainer/>} />
@@ -23,7 +26,7 @@ function App() {
     </Routes>
   
     </BrowserRouter>
-   
+    
    </div>
    
   );
