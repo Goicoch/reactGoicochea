@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
+import Contador from "../Contador/Contador";
 
 export const ItemDetail =({data = [] }) => {
 
-    
+    const [goToCart, setGoToCart]= useState(false);
+
+    const onAdd = (cantidad) =>{
+        setGoToCart(true);
+    }
+
     return(
         <div>
        
@@ -24,9 +31,11 @@ export const ItemDetail =({data = [] }) => {
                         <p   ClassName="lead">descripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripcion</p>
                         <div  ClassName="d-flex">
                            
-                        <Button type="button"  variant="dark">
-          Agregar al Carrito
-        </Button>
+        
+        {
+            goToCart ? <Link to="/cart">Terminar compra</Link>:<Contador initial ={1} stock={10} onAdd={onAdd}/>
+        }
+        
                         </div>
                     </div>
                 </div>

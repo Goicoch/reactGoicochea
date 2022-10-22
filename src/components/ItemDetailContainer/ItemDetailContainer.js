@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 
+
 const books = [
     {"id":1, "name":"Harry Potter","imagen":".//imagenes/harry potter.jpg", "price":3200, "autor":"J.K Rowling", "stock":0, "genero":"terror"},
     {"id":2, "name":"El señor de los anillos","imagen":".//imagenes/lordOfTheRings.png","price":4500, "autor":"J.R.R Tolkien", "stock":0, "genero":"fantasia"},
@@ -14,8 +15,8 @@ const books = [
   ] 
 
 export const ItemDetailContainer = () => {
-const [data, setData] = useState({});
-const { itemId} = useParams();
+    const [data, setData] = useState({});
+    const { itemId} = useParams();
 
 useEffect(() =>{
     const getData = new Promise(resolve => {

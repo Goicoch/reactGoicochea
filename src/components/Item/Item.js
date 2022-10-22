@@ -1,8 +1,11 @@
-import React from "react";
-
+import React,{useContext} from "react";
+import { CartProvider } from "../../Context/CartProvider"
 import { Link } from "react-router-dom";
 
 const Item =({info}) => { 
+const name = useContext (CartProvider);
+console.log("Item: ", name);
+
     return(
         <div  className="col mb-4 ">
         <div className="card">

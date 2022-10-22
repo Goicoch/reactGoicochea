@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
-import Contador from "../Contador/Contador";
+
 
 const books = [
     {"id":1, "name":"Harry Potter","imagen":".//imagenes/harry potter.jpg", "price":3200, "autor":"J.K Rowling", "stock":0, "genero":"terror"},
@@ -16,9 +16,7 @@ const books = [
 
 export const ItemListContainer = ({texto}) => {
     
-    const onAdd =(cantidad) =>{
-        console.log(`Compraste ${cantidad} total`)
-    }
+    
     
     const [data, setData] = useState([]);
     
@@ -31,7 +29,7 @@ export const ItemListContainer = ({texto}) => {
             }, 1500);
             
         });
-        if(categoryId){
+    if(categoryId){
         getData.then(res => setData(res.filter(books => books.genero ===categoryId)));
     }else {
         getData.then(res => setData(res));
@@ -43,7 +41,7 @@ export const ItemListContainer = ({texto}) => {
         
         <>
             <ItemList data={data}/>
-            <Contador initial ={1} stock={10} onAdd={onAdd}/>
+            
         </>
          );
         }
