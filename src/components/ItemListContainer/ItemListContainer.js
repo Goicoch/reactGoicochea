@@ -39,10 +39,10 @@ export const ItemListContainer = ({texto}) => {
 
     return (
         
-        <>
-            <ItemList data={data}/>
+        
+            <ItemList data={data} />
             
-        </>
+        
          );
         }
         

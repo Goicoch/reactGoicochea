@@ -4,7 +4,7 @@ import React from 'react';
 const ItemList =  ({ data = [] }) => {
 
 return (
-    data.map (books => <Item key={books.id} info={books}/>)
+    data.map (books => <Item key={books.id} info={books} />)
 );
 
 }
