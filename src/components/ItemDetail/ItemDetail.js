@@ -1,35 +1,37 @@
 import React,{useState} from "react";
-import Button from 'react-bootstrap/Button';
+import {useCartContext} from"../../Context/CartProvider";
 import { Link } from "react-router-dom";
 import Contador from "../Contador/Contador";
 
 export const ItemDetail =({data = [] }) => {
 
     const [goToCart, setGoToCart]= useState(false);
+    const{addBook} = useCartContext();
 
     const onAdd = (cantidad) =>{
         setGoToCart(true);
+        addBook(data, cantidad);
     }
 
     return(
         <div>
        
-        <section   ClassName="py-5">
-            <div   ClassName="container px-4 px-lg-5 my-5">
-                <div   ClassName="row gx-4 gx-lg-5 align-items-center">
-                    <div   ClassName="col-md-6">
+        <section   className="py-5">
+            <div   className="container px-4 px-lg-5 my-5">
+                <div   className="row gx-4 gx-lg-5 align-items-center">
+                    <div   className="col-md-6">
                         <img  style={{ width:200, }}  className="ItemDetailImg" src={data.imagen} alt="..." />
                     </div>
                     
-                    <div   ClassName="col-md-6">
-                        <div   ClassName="small mb-1">SKU: BST-498</div>
-                        <h1   ClassName="display-1 fw-bolder">{data.name}</h1>
-                        <div   ClassName="fs-5 mb-5">
+                    <div   className="col-md-6">
+                        <div   className="small mb-1">SKU: BST-498</div>
+                        <h1   className="display-1 fw-bolder">{data.name}</h1>
+                        <div   className="fs-5 mb-5">
                            
                             <span>${data.price}</span>
                         </div>
-                        <p   ClassName="lead">descripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripcion</p>
-                        <div  ClassName="d-flex">
+                        <p   className="lead">descripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripcion</p>
+                        <div  className="d-flex">
                            
         
         {

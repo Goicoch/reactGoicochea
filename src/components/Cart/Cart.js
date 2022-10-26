@@ -1,6 +1,8 @@
 import React from "react"
+import { useCartContext } from "../../Context/CartProvider"
 
 const Cart = () => {
+const { cart, totalPrice} = useCartContext();
 
     return (
     <div>
@@ -9,3 +11,4 @@ const Cart = () => {
     )
 }
 export default Cart 
+//react 10 7:50
