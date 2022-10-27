@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import NavBar from './components/NavBar/NavBar';
-import './components/CartWidget/CartWidget.js';
+import './components/Avatar/Avatar.js';
 import  ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
