@@ -1,5 +1,6 @@
 import React from "react";
 import "./ItemCart.css";
+import {useCartContext} from "..//../Context/CartProvider"
 
 const ItemCart = ({books}) =>{
 
@@ -11,9 +12,9 @@ const {removeBook} = useCartContext();
 <div>
     <p>Titulo: {books.title}</p>
     <p>Cantidad: {books.cantidad}</p>
-    <p>Precio: {books.price} </p>
+    <p>Precio:$ {books.price} </p>
     <p>Sub total:${books.cantidad * books.price}</p>
-    <button onClick={() => removeBook (books.id)}>Eliminar </button>
+    <button onClick={() => removeBook (books.id)} className="btn btn-outline-dark">Eliminar </button>
 </div>
 
 </div>

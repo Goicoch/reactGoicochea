@@ -27,15 +27,7 @@ console.log("Item: ", name);
       </div> </div>
   
   </Link> 
-  <div className="card-footer p-4 pt-3 border-top-1 bg-slate-500">
-      <div className="text-center">
-      <button className="  btn btn-outline-dark">Agregar al Carrito</button>
-                 </div>
-     
-      <div className="text-center">
-      <button  className="btn btn-outline-dark">Quitar del Carrito</button>
-      </div>
-  </div>
+ 
   
 </div>       
 </div>
