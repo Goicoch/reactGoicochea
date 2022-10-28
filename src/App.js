@@ -9,6 +9,8 @@ import Cart from './components/Cart/Cart';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartProvider from './Context/CartProvider';
+import ".//firebase/config";
+
 
 function App() {
   return (
