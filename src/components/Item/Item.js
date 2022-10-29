@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 
 const Item =({info}) => { 
-const name = useContext (CartProvider);
-console.log("Item: ", name);
+const nombre = useContext (CartProvider);
+
 
     return(
 
