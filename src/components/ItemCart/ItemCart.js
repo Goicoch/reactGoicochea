@@ -10,7 +10,7 @@ const {removeBook} = useCartContext();
 <div className="itemCart">
 <img src={books.image} alt={books.name} />
 <div>
-    <p>Titulo: {books.title}</p>
+    <p>Titulo: {books.name}</p>
     <p>Cantidad: {books.cantidad}</p>
     <p>Precio:$ {books.price} </p>
     <p>Sub total:${books.cantidad * books.price}</p>

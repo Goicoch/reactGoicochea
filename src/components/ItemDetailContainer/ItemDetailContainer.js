@@ -7,15 +7,15 @@ import { getFirestore, doc, getDoc } from "firebase/firestore";
 
 export const ItemDetailContainer = () => {
     const [data, setData] = useState({});
-    const {detalleId} = useParams();
+    const {itemId} = useParams();
 
 useEffect(() =>{
     const querydb = getFirestore();
-    const querydoc = doc(querydb, "books", "1uWjiGsoZ53GpSzLmHTP");
+    const querydoc = doc(querydb, "books", itemId);
     getDoc(querydoc)
     .then(res => setData({id: res.id, ...res.data()}))
 
-},[])
+},[itemId])
 
     return(
         <ItemDetail data={data} />
