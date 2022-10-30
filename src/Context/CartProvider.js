@@ -1,5 +1,5 @@
 import React, {useState, useContext } from "react";
-import { act } from "react-dom/test-utils";
+
 const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
@@ -11,19 +11,21 @@ export const CartProvider = ({children}) => {
 
     const clearCart = () => setCart ([]);
     
-    const isInCart =(id) => cart.find(books => books.id === id) ? true : false;
+    const isInCart =(id) => cart.find(book => book.id === id) ? true : false;
 
-    const removeBook = (id) => setCart (cart.filter(books => books.id !== id));
+    const removeBook = (id) => setCart (cart.filter(book => book.id !== id));
 
     const addBook = (item, cantidad) => {
         let newCart;
-        let books = cart.find (books => books.id === item.id);
-        if(books){
-            books.cantidad += cantidad;
+        let book = cart.find (book =>
+            book.id === item.id );
+
+        if(book){
+            book.cantidad += cantidad;
             newCart = [...cart];
         }else{
-            books = {...item, cantidad: cantidad };
-            newCart = [...cart, books]
+            book = {...item, cantidad: cantidad };
+            newCart = [...cart, book]
         }
         setCart(newCart)
     } ;
