@@ -11,11 +11,11 @@ const nombre = useContext (CartProvider);
     return(
 
         
-<div className="d-flex justify-content-evenly gx-4 gx-lg-5  row-cols-md-3  ">
+
         
-            <div className="card">
+            
             <Link to={`/item/${info.id}`}  >            
-  <img className="card-img-top" src={info.imagen} alt="..." />
+  <img className="card-img-top" src={info.image} alt="..." />
   
   <div className="card-body p-0">
       <div className="text-center">
@@ -24,13 +24,14 @@ const nombre = useContext (CartProvider);
           
          <h3> ${info.price}</h3>
           
-      </div> </div>
+      </div> 
+      </div>
   
   </Link> 
  
   
-</div>       
-</div>
+     
+
 
 
     );

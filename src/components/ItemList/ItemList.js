@@ -4,7 +4,11 @@ import React from 'react';
 const ItemList =  ({ data = [] }) => {
 
 return (
-    data.map (books => <Item key={books.id} info={books} />)
+    <div className="d-flex justify-content-evenly gx-4 gx-lg-5  row-cols-md-3 ">
+
+   { data.map (books => <Item key={books.id} info={books} />)}
+   
+    </div>
 );
 
 }
