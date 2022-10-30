@@ -8,7 +8,7 @@ const {removeBook} = useCartContext();
 
     return(
 <div className="itemCart">
-<img src={books.imagen} alt={books.name} />
+<img src={books.image} alt={books.name} />
 <div>
     <p>Titulo: {books.title}</p>
     <p>Cantidad: {books.cantidad}</p>

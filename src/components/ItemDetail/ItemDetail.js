@@ -20,17 +20,20 @@ export const ItemDetail =({data = [] }) => {
             <div   className="container px-4 px-lg-5 my-5">
                 <div   className="row gx-4 gx-lg-5 align-items-center">
                     <div   className="col-md-6">
-                        <img  style={{ width:200, }}  className="ItemDetailImg" src={data.imagen} alt="..." />
+                        <img  style={{ width:300, }}  className="ItemDetailImg" src={data.image} alt="..." />
                     </div>
                     
                     <div   className="col-md-6">
-                        <div   className="small mb-1">SKU: BST-498</div>
-                        <h1   className="display-1 fw-bolder">{data.name}</h1>
+                        <div   className="small mb-1">{data.genero}</div>
+                        <h1   className="display-2 fw-bolder">{data.name}</h1>
                         <div   className="fs-5 mb-5">
                            
                             <span>${data.price}</span>
                         </div>
-                        <p   className="lead">descripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripcion</p>
+                        <p   className="lead">descripciondescripc
+                        iondescripciondescripciondescripcionde
+                        scripciondescripciondescripciondescripci
+                        ondescripciondescripciondescripciondescripcion</p>
                         <div  className="d-flex">
                            
         
