@@ -13,20 +13,24 @@ const nombre = useContext (CartProvider);
         
 
         
+        
+            <Link to={`/item/${info.id}`}  >  
             
-            <Link to={`/item/${info.id}`}  >            
-  <img className="card-img-top" src={info.image} alt="..." />
-  
-  <div className="card-body p-0">
-      <div className="text-center">
+            
+            <div>        
+  <img className="h-48 w-full object-cover md:h-full md:w-48" src={info.image} alt="..." />
+  </div> 
+  <div className="p-8">
+      <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
      
-          <h5 className="fw-bolder">{info.name}</h5>
+          <h5 className="">{info.name}</h5>
           
          <h3> ${info.price}</h3>
-          
-      </div> 
-      </div>
-  
+
+          </div>
+          </div>
+      
+      
   </Link> 
  
   
