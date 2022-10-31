@@ -1,11 +1,11 @@
-import React,{useContext} from "react";
-import { CartProvider } from "../../Context/CartProvider"
+import React from "react";
+
 import { Link } from "react-router-dom";
 
 
 
 const Item =({info}) => { 
-const nombre = useContext (CartProvider);
+
 
 
     return(
