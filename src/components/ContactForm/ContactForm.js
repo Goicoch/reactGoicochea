@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import "./ContactForm.css";
+import { useCartContext } from "../../Context/CartProvider"
 
 
-
-const defaultForm = { name: '', email: '', message: '' };
+const defaultForm = { name: '', email: '', message: '', cart:[]};
 
 const ContactForm = () => {
   const [form, setForm] = useState(defaultForm);
   const [id, setId] = useState();
 
+  const {cart} = useCartContext();
   const changeHandler = (ev) => {
-    setForm({ ...form, [ev.target.name]: ev.target.value });
+    setForm({ ...form, cart:cart, [ev.target.name]: ev.target.value });
   };
 
   const submitHandler = (ev) => {
