@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import "./ContactForm.css"
+import "./ContactForm.css";
+
+
 
 const defaultForm = { name: '', email: '', message: '' };
 
@@ -20,6 +22,7 @@ const ContactForm = () => {
       setId(snapshot.id);
     });
   };
+  
 
   const resetHandler = () => {
     setForm(defaultForm);
