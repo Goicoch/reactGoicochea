@@ -3,6 +3,7 @@ import {useCartContext} from"../../Context/CartProvider";
 import { Link } from "react-router-dom";
 import Contador from "../Contador/Contador";
 
+
 export const ItemDetail =({data = [] }) => {
 
     const [goToCart, setGoToCart]= useState(false);
@@ -15,7 +16,7 @@ export const ItemDetail =({data = [] }) => {
 
     return(
         <div>
-       
+      
         <section   className="py-5">
             <div   className="container px-4 px-lg-5 my-5">
                 <div   className="row gx-4 gx-lg-5 align-items-center">

@@ -7,6 +7,7 @@ const ItemCart = ({books}) =>{
 const {removeBook} = useCartContext();
 
     return(
+        <>
 <div className="itemCart">
 <img src={books.image} alt={books.name} />
 <div>
@@ -18,7 +19,7 @@ const {removeBook} = useCartContext();
 </div>
 
 </div>
-
+</>
     )
 
 }
