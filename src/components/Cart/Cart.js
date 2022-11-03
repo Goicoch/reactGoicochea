@@ -3,7 +3,7 @@ import { useCartContext } from "../../Context/CartProvider";
 import { Link } from "react-router-dom";
 import ItemCart from "../ItemCart/ItemCart";
 import "./Cart.css";
-import { NavLink } from 'react-router-dom';
+
 
 
 const Cart = () => {
@@ -27,7 +27,7 @@ if (cart.length === 0) {
         }
         <h3>Total: ${totalPrice()}</h3>
 
-         <NavLink to="/contactForm" className="registro">Registrate para continuar en este enlace</NavLink>
+         <Link to="/contactForm" className="registro">Registrate para continuar en este enlace</Link>
         
        
     </>

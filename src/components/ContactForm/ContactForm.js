@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import "./ContactForm.css";
 import { useCartContext } from "../../Context/CartProvider"
-
+import { Link } from "react-router-dom";
 
 const defaultForm = { name: '', email: '', message: '', cart:[]};
 
@@ -36,8 +36,8 @@ const ContactForm = () => {
       {id ? (
         <div>
           <h5>Gracias por Registrarte, te llegara un e mail de confirmacion</h5>
-          
           <button className="btn btn-outline-dark" onClick={resetHandler}>Enviar otro mensaje</button>
+          <Link to="/">Seguir comprando</Link>
         </div>
       ) : (
         <form onSubmit={submitHandler}>
