@@ -6,6 +6,7 @@ import './components/Avatar/Avatar.js';
 import  ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
+import ContactForm from './components/ContactForm/ContactForm';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartProvider from './Context/CartProvider';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/category/" element={ <ItemListContainer/>} />
             <Route path="/category/:categoryId" element={ <ItemListContainer/>} />
             <Route path="/cart" element={ <Cart/>} />
+            <Route path="/contactForm" element={ <ContactForm/>} />
         
             <Route path="/item/:itemId" element={ <ItemDetailContainer/>} />
          </Routes>
